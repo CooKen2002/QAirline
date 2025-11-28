@@ -1,0 +1,144 @@
+:root {
+  --sky-light: #e6f0fa;
+  --sky-blue: #0070ba;
+  --sky-hover: #005999;
+  --sky-dark: #003366;
+  --sky-link: #005b96;
+  --sky-navbar: #004080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--sky-light); /* nền nhẹ như trời */
+  color: var(--sky-dark);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--sky-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: var(--sky-navbar);
+  color: white;
+  align-items: center;
+}
+
+.navbar button {
+  margin-left: 10px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.navbar button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Modal chung */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal {
+  background: var(--sky-light);
+  padding: 20px 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 112, 186, 0.3);
+  position: relative;
+}
+
+.modal h2 {
+  color: var(--sky-dark);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.modal button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: var(--sky-blue);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.modal button[type="submit"]:hover {
+  background: var(--sky-hover);
+}
+
+.modal p {
+  font-size: 0.9rem;
+  color: var(--sky-dark);
+  text-align: center;
+  margin-top: 8px;
+}
+
+.modal p button {
+  background: none;
+  color: var(--sky-link);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}

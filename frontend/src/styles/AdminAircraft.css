@@ -1,0 +1,71 @@
+.admin-aircraft {
+  padding: 40px;
+  background: #f3f7fa;
+  min-height: 100vh;
+}
+
+.aircraft-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.aircraft-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.add-aircraft-button {
+  background: #0077cc;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.aircraft-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aircraft-item {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.aircraft-item h4 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.aircraft-item p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.aircraft-item small {
+  color: #777;
+}
+
+.aircraft-item button {
+  margin-right: 12px;
+  background: #005fa3;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.aircraft-item button:last-child {
+  background: #cc0000;
+}

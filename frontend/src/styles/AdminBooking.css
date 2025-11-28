@@ -1,0 +1,31 @@
+.admin-booking {
+  padding: 40px;
+  background: #f3f7fa;
+}
+
+.admin-booking h2 {
+  margin-bottom: 20px;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.booking-item p {
+  margin: 6px 0;
+  color: #333;
+}
+
+.booking-item strong {
+  color: #000;
+}

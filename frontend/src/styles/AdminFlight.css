@@ -1,0 +1,59 @@
+.admin-flight {
+  padding: 40px;
+  background: #f3f7fa;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-flight-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.flight-list .flight-item {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.flight-item h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.flight-item p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.flight-item button {
+  margin-right: 10px;
+  background-color: #004c99;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.flight-item button:last-child {
+  background-color: #d9534f;
+}
+
+.admin-flight p {
+  font-style: italic;
+  color: #666;
+}

@@ -1,0 +1,103 @@
+/* navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--sky-navbar); /* màu navbar từ biến CSS */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  font-weight: 600;
+  font-size: 1rem;
+  user-select: none;
+}
+
+.navbar-brand a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.auth-buttons button {
+  background: transparent;
+  border: 1.5px solid white;
+  color: white;
+  padding: 6px 14px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: white;
+  color: var(--sky-navbar);
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  transition: box-shadow 0.3s ease;
+}
+
+.user-avatar:hover {
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.7);
+}
+
+.user-name {
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Responsive (nếu cần) */
+@media (max-width: 600px) {
+  .navbar-menu {
+    gap: 1rem;
+  }
+
+  .auth-buttons button {
+    padding: 5px 10px;
+    margin-left: 5px;
+  }
+
+  .user-name {
+    display: none; /* ẩn tên khi màn nhỏ, chỉ show avatar */
+  }
+}

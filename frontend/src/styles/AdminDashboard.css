@@ -1,0 +1,41 @@
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 250px;
+  background: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.admin-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 40px;
+  background: #f3f7fa;
+}
+
+.admin-buttons button {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-buttons button:hover {
+  background: #004c99;
+}
